@@ -8,19 +8,15 @@
         // aux.push(arr[outter])
         // aux.reverse()
         console.log(arr)
-        let swap = swap
-        let curr = curr
-        let next = next
+        let swap = []
 
         if(arr[outter+1] > arr[outter] ){
            swap = arr[outter+1]
-           curr = arr[outter]
-           next = swap
+           let curr = arr[outter]
+           let next = swap
             console.log(arr)
         }
         
     }
-    const highestvalue = (arr)=>{
-        
-    }
+
 }

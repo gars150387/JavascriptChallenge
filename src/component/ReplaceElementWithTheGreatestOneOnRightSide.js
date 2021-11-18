@@ -8,8 +8,14 @@
         // aux.push(arr[outter])
         // aux.reverse()
         console.log(arr)
+        let swap = swap
+        let curr = curr
+        let next = next
+
         if(arr[outter+1] > arr[outter] ){
-            arr[outter] = arr[outter+1]
+           swap = arr[outter+1]
+           curr = arr[outter]
+           next = swap
             console.log(arr)
         }
         

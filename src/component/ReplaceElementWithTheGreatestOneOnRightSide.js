@@ -3,20 +3,21 @@
  * @return {number[]}
  */
  var replaceElements = function(arr) {
-    let aux = []
-    for (let outter = 0; outter < arr.length; outter++){
-        // aux.push(arr[outter])
-        // aux.reverse()
-        console.log(arr)
-        let swap = []
-
-        if(arr[outter+1] > arr[outter] ){
-           swap = arr[outter+1]
-           let curr = arr[outter]
-           let next = swap
-            console.log(arr)
-        }
-        
-    }
+    arr[0] = Math.max(...arr)
+    // console.log(arr[0])
+    arr[arr.length] = -1
+    // console.log(arr.length)
+    
+   for ( let i = arr.length - 1; i > 0; i--){
+       // console.log(arr[i])
+       if (arr[i] > arr[i-1]){
+           arr[i-1] = arr[i]
+           // console.log(arr[i-1])
+       }
+       else if (arr[0] === arr[1]){
+           arr.slice(1)
+       }
+   }
+   return arr
 
 }

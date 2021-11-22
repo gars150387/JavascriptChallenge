@@ -2,6 +2,11 @@
  * @param {number[]} arr
  * @return {number[]}
  */
+
+// result is wrong answer because when it is test with an array = [400]
+//shoulb be return -1 
+
+
  var replaceElements = function(arr) {
     arr[0] = Math.max(...arr)
     // console.log(arr[0])

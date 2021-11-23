@@ -18,3 +18,5 @@
      }
      return fm;
  };
+
+ export default findMaxConsecutiveOnes;

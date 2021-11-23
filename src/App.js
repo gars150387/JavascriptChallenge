@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import FindNUmbersWithEvenNumberOfDigits from "./component/FindNumbersWithEvenNumbersOfDigits"
+import twoSum from './component/TwoSum';
+import MaxConsecutiveOnes from "./component/MaxConsecutiveOnes"
+import MoveZeroes from "./component/MoveZeroes"
+import RemoveDuplicateInSortedArray from "./component/RemoveDuplicateInSortedArray"
+import ReplaceElementWithTheGreatestOneOnRightSide from "./component/ReplaceElementWithTheGreatestOneOnRightSide"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FindNUmbersWithEvenNumberOfDigits/>
+      <br/>
+      <MaxConsecutiveOnes />
+      <br/>
+      <MoveZeroes />
+      <br/>
+      <RemoveDuplicateInSortedArray />
+      <br/>
+      <ReplaceElementWithTheGreatestOneOnRightSide />
+      <br/>
+      <TwoSum />
     </div>
   );
 }

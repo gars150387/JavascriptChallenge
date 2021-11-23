@@ -1,3 +1,5 @@
+import React from "react";
+
 /**
  * @param {number[]} nums
  * @return {number}
@@ -12,3 +14,4 @@
     }
     return index;
 }
+export default removeDuplicates;

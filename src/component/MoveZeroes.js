@@ -1,30 +1,23 @@
+import React from "react";
+
 /**
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
  var moveZeroes = function(nums) {
-    
-    for (let i = 0; i < nums.length; i++){
-        console.log(nums[i])
-        
-        if (nums[i] < 1){
-            nums.shift(nums[i])
-            console.log(nums[i])
-            
-            nums.push(0)
+    let index = 0;
+
+    for ( let i = 0; i < nums.length; i++){
+        const num = nums[i];
+
+        if(num !== 0){
+            nums[index] = nums[i];
+            index++
         }
-        else if(nums[0] === 0){
-            return nums[0] = 1;
-            console.log(nums)
-        }
-        else if (nums.length < 2){
-            return nums=[0]
-            console.log(nums)
-        }
-                         
-    
     }
-    return nums
+    for ( let i = index; i < nums.length; i++){
+        nums[i] = 0;
+    }
 };
 
 export default moveZeroes;

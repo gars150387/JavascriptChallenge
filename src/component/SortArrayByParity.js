@@ -23,6 +23,14 @@
  var sortArrayByParity = function(nums) {
     let index = 0;
     
-    for (let i = 0; nums.length; )
+    for (let i = 0; nums.length; i++){
+
+        const num = nums[i];
+
+        if( num % 2 == 0 ){
+            nums[index] = 
+            index++
+        }
+    }
     
 };

@@ -27,8 +27,10 @@
 
         const num = nums[i];
 
-        if( num % 2 == 0 ){
-            nums[index] = 
+        if( num % 2 === 1 ){
+            nums.push(num);
+        }else {
+            nums[index] = num
             index++
         }
     }

@@ -18,22 +18,24 @@
 //  Constraints:
 //  1 <= nums.length <= 5000
 //  0 <= nums[i] <= 5000
- var sortArrayByParity = function(nums) {
-    
-    let index = nums.length - 1;
-    let swap = 0;
-    let first = nums[0];
-    let last = index;
+var sortArrayByParity = function(nums) {
     
     for ( let i = 0;  i < nums.length; i++){
-            let index =nums[0]
+            let index = 0;
+        let lastIndex = nums.length-1
+            // let lastIndex = nums.length-1
+            // console.log(lastIndex)
             
-            if ( index % 2 === 1){
-                nums.shift(index)
-                nums.push(index)
+            if ( nums[index] % 2 === 1){
+                nums.push(nums[index])
+                nums.shift(nums[lastIndex])
                 index++;
                 console.log(nums)
+            }else {
+                index++;
+                // console.log(index)
             }
     }
     return nums
+    console.log(nums)
 };

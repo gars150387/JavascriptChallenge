@@ -32,7 +32,7 @@ var sortArrayByParity = function(nums) {
             
             if ( nums[index] % 2 === 1){
                 nums.push(nums[index])
-                nums.shift(nums[lastIndex])
+                nums.shift(nums[index])
                 index++;
                 console.log(nums)
             }else {

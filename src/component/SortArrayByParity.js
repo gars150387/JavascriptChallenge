@@ -24,22 +24,69 @@
 
 var sortArrayByParity = function(nums) {
     
-    for ( let i = 0;  i < nums.length; i++){
-            let index = 0;
-        let lastIndex = nums.length-1
-            // let lastIndex = nums.length-1
-            // console.log(lastIndex)
+
+    //first solution which did not work
+    // for ( let i = 0;  i < nums.length; i++){
+    //         let index = 0;
+    //     let lastIndex = nums.length-1
+    //         // let lastIndex = nums.length-1
+    //         // console.log(lastIndex)
             
-            if ( nums[index] % 2 === 1){
-                nums.push(nums[index])
-                nums.shift(nums[index])
-                index++;
-                console.log(nums)
-            }else {
-                index++;
-                // console.log(index)
-            }
+    //         if ( nums[index] % 2 === 1){
+    //             nums.push(nums[index])
+    //             nums.shift(nums[index])
+    //             index++;
+    //             console.log(nums)
+    //         }else {
+    //             index++;
+    //             // console.log(index)
+    //         }
+    // }
+    // return nums
+    // console.log(nums)
+
+    //Second solution which did not work either
+    //     for ( let i = 0;  i < nums.length; i++){
+//             let index = 0;
+//         let lastIndex = nums.length
+//             // let lastIndex = nums.length-1
+//             // console.log(lastIndex)
+            
+//             if ( nums[index] % 2 === 1){
+//                 nums.splice(lastIndex, 0, nums[index])
+//                 console.log(nums)
+                
+//                 nums.splice(index,1)
+//                 console.log(nums)
+//                 // nums.shift(nums[index])
+//                 // index++;
+//                 console.log(nums[index])
+//                 console.log(nums)
+//             }else{
+//                 index++;
+//                 console.log(nums[index])
+//             }
+//     }
+//     return nums
+//     console.log(nums)
+
+
+
+    //third solution worked
+var sortArrayByParity = function(nums) {
+    let i = 0;
+    let j = 0;
+    
+    while( j < nums.length){
+        if( nums[j] % 2 === 0){
+            const temp = nums[i]
+            nums[i] = nums[j]
+            nums[j] = temp
+            i++
+        }
+        j++
     }
     return nums
-    console.log(nums)
+    
+};
 };

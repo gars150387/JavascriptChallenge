@@ -21,8 +21,6 @@
 
 // let nums = [3,1,2,4] first interation to test the  (code passed)
 // let nums = [0,1,2] second interation to test the code (code failed)
-
-var sortArrayByParity = function(nums) {
     
 
     //first solution which did not work
@@ -49,26 +47,19 @@ var sortArrayByParity = function(nums) {
     //     for ( let i = 0;  i < nums.length; i++){
 //             let index = 0;
 //         let lastIndex = nums.length
-//             // let lastIndex = nums.length-1
-//             // console.log(lastIndex)
             
 //             if ( nums[index] % 2 === 1){
 //                 nums.splice(lastIndex, 0, nums[index])
-//                 console.log(nums)
                 
 //                 nums.splice(index,1)
-//                 console.log(nums)
-//                 // nums.shift(nums[index])
 //                 // index++;
-//                 console.log(nums[index])
-//                 console.log(nums)
 //             }else{
 //                 index++;
-//                 console.log(nums[index])
 //             }
 //     }
 //     return nums
-//     console.log(nums)
+// }
+
 
 
 
@@ -88,5 +79,4 @@ var sortArrayByParity = function(nums) {
     }
     return nums
     
-};
 };

@@ -39,3 +39,5 @@
     }
     return result;
 };
+
+export default findNumbers;

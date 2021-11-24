@@ -1,3 +1,5 @@
+import React from "react";
+
 /**
  * @param {number[]} arr
  * @return {number[]}
@@ -28,3 +30,5 @@
    }
    return arr;
 };
+
+export default replaceElements;

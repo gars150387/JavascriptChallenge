@@ -4,21 +4,31 @@
  */
 
 //  Given an integer array nums, move all the even integers at the beginning of the array followed by all the odd integers.
+<<<<<<< HEAD
 
 //  Return any array that satisfies this condition.
  
+=======
+//  Return any array that satisfies this condition.
+
+>>>>>>> d710fed9a156f76fb14c8d038a0c9bd54dafc680
 //  Example 1:
 //  Input: nums = [3,1,2,4]
 //  Output: [2,4,3,1]
 //  Explanation: The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
 
+<<<<<<< HEAD
 //  Example 2:
+=======
+//  Example 2
+>>>>>>> d710fed9a156f76fb14c8d038a0c9bd54dafc680
 //  Input: nums = [0]
 //  Output: [0]
 
 //  Constraints:
 //  1 <= nums.length <= 5000
 //  0 <= nums[i] <= 5000
+<<<<<<< HEAD
  var sortArrayByParity = function(nums) {
     
     let index = nums.length - 1;
@@ -37,4 +47,23 @@
             }
     }
     return nums
+=======
+
+
+ var sortArrayByParity = function(nums) {
+    let index = 0;
+    
+    for (let i = 0; nums.length; i++){
+
+        const num = nums[i];
+
+        if( num % 2 === 1 ){
+            nums.push(num);
+        }else {
+            nums[index] = num
+            index++
+        }
+    }
+    
+>>>>>>> d710fed9a156f76fb14c8d038a0c9bd54dafc680
 };

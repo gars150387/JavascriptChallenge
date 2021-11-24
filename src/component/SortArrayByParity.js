@@ -18,6 +18,10 @@
 //  Constraints:
 //  1 <= nums.length <= 5000
 //  0 <= nums[i] <= 5000
+
+// let nums = [3,1,2,4] first interation to test the  (code passed)
+// let nums = [0,1,2] second interation to test the code (code failed)
+
 var sortArrayByParity = function(nums) {
     
     for ( let i = 0;  i < nums.length; i++){

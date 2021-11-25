@@ -78,5 +78,6 @@ var sortArrayByParity = function(nums) {
         j++
     }
     return nums
+    console.log(nums)
     
 };

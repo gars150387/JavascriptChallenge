@@ -53,5 +53,21 @@
  * @return {number}
  */
  var removeElement = function(nums, val) {
+    let index = 0;
+    
+    for (let i = 0; i < nums.length; i++){
+        const num = nums[index]
+        
+        if (num  === val){
+            nums.splice(nums[index],1) 
+            index++
+        }
+        
+        let left = num;
+        let right = nums[index+1]
+        if (num === undifened){
+            let swap = right
+        }
+    }
     
 };

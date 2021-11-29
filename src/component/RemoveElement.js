@@ -66,7 +66,9 @@
         let left = num;
         let right = nums[index+1]
         if (num === undifened){
-            let swap = right
+            let swap = left
+            left = right
+            right = swap
         }
     }
     

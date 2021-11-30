@@ -53,21 +53,5 @@
  * @return {number}
  */
  var removeElement = function(nums, val) {
-    let pivot = val
-
-    for ( let i = 0; i < nums.length; i++){
-        const num = nums[i]
-        let left = 0;
-        let right = 0;
-
-        if ( num !== pivot){
-            let swap = num
-            left = pivot
-            right = swap;
-        }else{
-            i++
-        }
-    }
-    return nums
     
 };

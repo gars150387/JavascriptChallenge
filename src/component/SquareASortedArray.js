@@ -77,16 +77,25 @@ var sortedSquares = function(nums) {
     
     for ( let i = 0; i < nums.length/2; i++){
         element = nums[i]*nums[i]
-        aux.push(element)
+        // aux.push(element)
     }
-    for ( let j = nums.length-1; j > nums.length/2; j--){
-        otherElement= nums[j]*nums[j]
-        aux.push(otherElement)
+    let pivot = nums[0];
+    let index = 0
+    let left = nums[index]
+    let back = nums.length-1;
+    let right = nums[back]
+
+    for (){
+        
     }
+    // for ( let j = nums.length-1; j > nums.length/2; j--){
+    //     otherElement= nums[j]*nums[j]
+    //     aux.push(otherElement)
+    // }
     
-    aux.sort(function(a,b){
-        return a - b;
-    })
+    // aux.sort(function(a,b){
+    //     return a - b;
+    // })
     return aux;
 };
 // result

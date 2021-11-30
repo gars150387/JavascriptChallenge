@@ -103,7 +103,7 @@ var sortedSquares = function(nums) {
         }
     }
         if(pivot >= left && pivot <= right){
-            
+            pivot = i
         }
     }
     // for ( let j = nums.length-1; j > nums.length/2; j--){

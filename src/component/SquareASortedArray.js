@@ -80,13 +80,31 @@ var sortedSquares = function(nums) {
         // aux.push(element)
     }
     let pivot = nums[0];
-    let index = 0
+    let index = 1
     let left = nums[index]
     let back = nums.length-1;
     let right = nums[back]
 
-    for (){
-        
+    for (let j = index; j < nums.length/2; j++){
+        if (left > right){
+            let swap = left
+            left = right
+            right = swap
+            index+=1;
+        }else{
+            index+=1
+        }
+    for (let z = back; z > nums.length/2; z--){
+        if( right < left){
+            let backSwap = right
+            right = left
+            left = backSwap
+            back--;
+        }
+    }
+        if(pivot >= left && pivot <= right){
+            
+        }
     }
     // for ( let j = nums.length-1; j > nums.length/2; j--){
     //     otherElement= nums[j]*nums[j]

@@ -135,3 +135,25 @@ var sortedSquares = function(nums) {
     }
     return nums.sort((a,b)=> a-b)
 };
+
+//thrid approaching (succeed as well)
+
+var sortedSquares = function(nums) {
+    let l = 0
+    let r = nums.length-1
+    let result = []
+
+    while ( l <= r ){
+        let num1 = Math.pow(nums[l],2)
+        let num2 = Math.pow(nums[r],2)
+
+        if ( l < r ){
+            result.push(num1)
+            l++
+        }else{
+            result.push(num2)
+            r--
+        }
+    }
+    return result
+};

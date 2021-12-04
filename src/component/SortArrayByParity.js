@@ -19,20 +19,65 @@
 //  1 <= nums.length <= 5000
 //  0 <= nums[i] <= 5000
 
-
- var sortArrayByParity = function(nums) {
-    let index = 0;
+// let nums = [3,1,2,4] first interation to test the  (code passed)
+// let nums = [0,1,2] second interation to test the code (code failed)
     
-    for (let i = 0; nums.length; i++){
 
-        const num = nums[i];
+    //first solution which did not work
+    // for ( let i = 0;  i < nums.length; i++){
+    //         let index = 0;
+    //     let lastIndex = nums.length-1
+    //         // let lastIndex = nums.length-1
+    //         // console.log(lastIndex)
+            
+    //         if ( nums[index] % 2 === 1){
+    //             nums.push(nums[index])
+    //             nums.shift(nums[index])
+    //             index++;
+    //             console.log(nums)
+    //         }else {
+    //             index++;
+    //             // console.log(index)
+    //         }
+    // }
+    // return nums
+    // console.log(nums)
 
-        if( num % 2 === 1 ){
-            nums.push(num);
-        }else {
-            nums[index] = num
-            index++
+    //Second solution which did not work either
+    //     for ( let i = 0;  i < nums.length; i++){
+//             let index = 0;
+//         let lastIndex = nums.length
+            
+//             if ( nums[index] % 2 === 1){
+//                 nums.splice(lastIndex, 0, nums[index])
+                
+//                 nums.splice(index,1)
+//                 // index++;
+//             }else{
+//                 index++;
+//             }
+//     }
+//     return nums
+// }
+
+
+
+
+    //third solution worked
+var sortArrayByParity = function(nums) {
+    let i = 0;
+    let j = 0;
+    
+    while( j < nums.length){
+        if( nums[j] % 2 === 0){
+            const temp = nums[i]
+            nums[i] = nums[j]
+            nums[j] = temp
+            i++
         }
+        j++
     }
+    return nums
+    console.log(nums)
     
 };

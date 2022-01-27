@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import FindNUmbersWithEvenNumberOfDigits from "./component/FindNumbersWithEvenNumbersOfDigits"
-import twoSum from './component/TwoSum';
+import TwoSum from './component/TwoSum';
 import MaxConsecutiveOnes from "./component/MaxConsecutiveOnes"
 import MoveZeroes from "./component/MoveZeroes"
 import RemoveDuplicateInSortedArray from "./component/RemoveDuplicateInSortedArray"
